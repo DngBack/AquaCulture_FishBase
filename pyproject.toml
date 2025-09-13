@@ -18,3 +18,9 @@ dependencies = [
     "scikit-learn>=1.7.1",
     "xarray>=2025.9.0",
 ]
+
+[tool.uv.workspace]
+members = [
+    "aquaculture_data_pipeline/services/bio-oracle-data",
+    "services/bio-oracle-data",
+]

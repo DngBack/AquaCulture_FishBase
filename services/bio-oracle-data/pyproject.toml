@@ -1,0 +1,24 @@
+[project]
+name = "bio-oracle-data"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dương Xuân Bách", email = "bachduong7103@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "dask>=2025.9.0",
+    "netcdf4>=1.7.2",
+    "pyo-oracle>=0.0.5",
+    "rasterio>=1.4.3",
+    "rioxarray>=0.19.0",
+    "xarray>=2025.9.0",
+]
+
+[project.scripts]
+bio-oracle-data = "bio_oracle_data:main"
+
+[build-system]
+requires = ["uv_build>=0.8.15,<0.9.0"]
+build-backend = "uv_build"
